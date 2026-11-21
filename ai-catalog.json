@@ -1,0 +1,43 @@
+{
+  "mediaType": "application/ai-catalog+json",
+  "version": "1.0",
+  "publisher": {
+    "identifier": "gpaschercher-sudo.github.io",
+    "displayName": "PowerFlow Energy Assistant",
+    "identityType": "https-origin"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:gpaschercher-sudo.github.io:agent:powerflow_grid",
+      "displayName": "PowerFlow Energy Assistant",
+      "description": "Check PowerFlow remote smart-meter grid energization schedules, rules, or confirm a date modification.",
+      "type": "application/a2a-agent-card+json",
+      "url": "https://gpaschercher-sudo.github.io/powerflow-agentic-peer/agent-card.json",
+      "targetDigest": "sha256:88db36fc38f569db3bfcf5e8bd1c00d8186cdc3a5390d1f26b1877dbf7cb2aea",
+      "tags": [
+        "open-agentic-web",
+        "a2a",
+        "powerflow"
+      ],
+      "publisher": {
+        "identifier": "gpaschercher-sudo.github.io",
+        "displayName": "PowerFlow Energy Assistant",
+        "identityType": "dns-or-platform-subpath"
+      },
+      "extensions": {
+        "org.projectnanda": {
+          "resolutionRole": "direct-agent-card",
+          "preferredDiscovery": "agent-manifest-and-a2a",
+          "resolutionProfile": "known-subject-resolution-02"
+        },
+        "org.worldwideagenticweb": {
+          "mvpProfile": "0.2",
+          "manifestUrl": "https://gpaschercher-sudo.github.io/powerflow-agentic-peer/agent-manifest.json",
+          "networkUrl": "https://gpaschercher-sudo.github.io/powerflow-agentic-peer/powerflow_grid.network.json",
+          "factsManifestUrl": "https://gpaschercher-sudo.github.io/powerflow-agentic-peer/facts/agent-manifest.json",
+          "factsNetworkDigest": "sha256:6f88887bb9ce4e834924ecd15a5d4eb4a72dbfb3a926e1321902bb069d922a2e"
+        }
+      }
+    }
+  ]
+}

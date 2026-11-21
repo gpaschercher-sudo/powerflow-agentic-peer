@@ -1,0 +1,46 @@
+{
+  "name": "PowerFlow Energy Assistant",
+  "description": "Check PowerFlow remote smart-meter grid energization schedules, rules, or confirm a date modification.",
+  "version": "1.0.0",
+  "url": "https://gpaschercher-sudo.github.io/powerflow-agentic-peer/powerflow_grid.network.json",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "smart-meter-energization",
+      "name": "Remote Smart-Meter Electricity Activation Scheduling",
+      "description": "Checks remote smart-meter energization dates and executes zero-fee schedule shifts in the demonstration environment.",
+      "tags": [
+        "electricity",
+        "utility",
+        "smart-meter",
+        "demo-peer"
+      ]
+    }
+  ],
+  "extensions": {
+    "org.worldwideagenticweb": {
+      "mvpProfile": "0.2",
+      "manifestUrl": "https://gpaschercher-sudo.github.io/powerflow-agentic-peer/agent-manifest.json",
+      "networkUrl": "https://gpaschercher-sudo.github.io/powerflow-agentic-peer/powerflow_grid.network.json",
+      "factsNetworkUrl": "https://gpaschercher-sudo.github.io/powerflow-agentic-peer/facts/powerflow_grid_facts.network.json",
+      "browserExecuted": true
+    },
+    "org.projectnanda": {
+      "subjectUrnHint": "urn:air:gpaschercher-sudo.github.io:agent:powerflow_grid",
+      "aiCatalogUrl": "https://gpaschercher-sudo.github.io/powerflow-agentic-peer/ai-catalog.json",
+      "resolutionProfile": "known-subject-resolution-02"
+    }
+  }
+}
